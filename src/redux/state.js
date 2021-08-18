@@ -1,5 +1,8 @@
-export default {
-    // Add user property here
+export let state = {
+   user:
+   {username: 'test-user-1',
+email: 'test-user@example.com'}
+,
     cars: [
         {
            "id": 1,
@@ -243,4 +246,5 @@ export default {
         }
     ]
   };
+
   
