@@ -3,7 +3,7 @@ import {state} from './state'
 export let StoreContext = createContext();
 
 export let StoreProvider = (props) => {
-  let [store, setStore] = useState(state);
+  let [store] = useState(state);
   return (
     <StoreContext.Provider value={{ store }}>
       {props.children}
