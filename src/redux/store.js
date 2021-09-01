@@ -1,12 +1,6 @@
-import React, { useState, createContext } from 'react';
-import {state} from './state'
-export let StoreContext = createContext();
+import { createStore } from 'redux'
+import reducers from './reducers'
+import state from 'state'
 
-export let StoreProvider = (props) => {
-  let [store] = useState(state);
-  return (
-    <StoreContext.Provider value={{ store }}>
-      {props.children}
-    </StoreContext.Provider>
-  );
-};
+export default createStore(reducers, state)
+

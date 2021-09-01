@@ -1,9 +1,10 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
+import { AppBar, Toolbar, IconButton, 
+    Typography } from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
+import { Link } from 'react-router-dom'
 
-export let Navigation = () => {
+const Navigation = () => {
     return (
         <AppBar position="relative">
             <Toolbar>
@@ -21,10 +22,12 @@ export let Navigation = () => {
                         <Link to="/about">About</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/dashboard">Dasboard</Link>
+                        <Link to="/dashboard">Dashboard</Link>
                     </li>
                 </ul>
             </Toolbar>
         </AppBar>
     )
-};
+}
+
+export default Navigation
