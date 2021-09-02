@@ -1,8 +1,8 @@
-export let state = {
-   user:
-   {username: 'test-user-1',
-email: 'test-user@example.com'}
-,
+let state = {
+   user: {
+      username: 'test-user-1',
+      email: 'test-user@example.com'
+   },
     cars: [
         {
            "id": 1,
@@ -247,4 +247,4 @@ email: 'test-user@example.com'}
     ]
   };
 
-  
+  export default state
